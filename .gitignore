@@ -1,0 +1,38 @@
+# Игнорируем все файлы по умолчанию
+*
+
+# Разрешаем конкретные файлы и директории
+!.gitignore
+!README.md
+!deploy_custom_site.sh
+!scripts/
+!scripts/*.sh
+
+# Игнорируем логи и временные файлы
+*.log
+*.tmp
+*.temp
+/logs/
+/tmp/
+
+# Игнорируем конфигурационные файлы
+.env
+config.local.sh
+
+# Игнорируем бэкапы
+*.bak
+*.backup
+/backups/
+
+# Игнорируем системные файлы
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
